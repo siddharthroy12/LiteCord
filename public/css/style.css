@@ -114,15 +114,15 @@ a {
 
 .chat-messages {
 	padding: 30px;
-	max-height: 400px;
-	min-height: 400px;
+	height: 400px;
 	overflow-y: scroll;
 }
 
 .chat-messages .message {
 	padding: 10px;
 	margin-bottom: 15px;
-	background-color: #eee;
+	background-color: #222222;
+	color: #eee;
 	border-radius: 5px;
 	overflow-wrap: break-word;
 }
@@ -130,13 +130,13 @@ a {
 .chat-messages .message .meta {
 	font-size: 15px;
 	font-weight: bold;
-	color: #222222;
+	color: #eee;
 	opacity: 0.7;
 	margin-bottom: 7px;
 }
 
 .chat-messages .message .meta span {
-	color: #777;
+	color: #fff;
 }
 
 .chat-form-container {
@@ -166,7 +166,7 @@ a {
 	}
 
 	.chat-container {
-		height: 100vh;
+		height: 100%;
 		margin: 0;
 		border-top-left-radius: 0px;
 		border-top-right-radius: 0px;
@@ -177,11 +177,24 @@ a {
 	}
 
 	.chat-messages {
-		max-height: 450px;
-		min-height: 450px;
+		margin-top: 100px;
+		height: 100%;
 	}
 
 	.chat-sidebar {
 		display: none;
+	}
+
+	.chat-header {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+
+	.chat-form-container {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
 	}
 }
