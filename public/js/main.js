@@ -25,6 +25,7 @@ socket.on('message', message => {
 
     // Scroll down
     chatMessages.scrollTop = chatMessages.scrollHeight;
+    window.scrollTo(0, window.outerHeight);
 })
 
 // Message submit

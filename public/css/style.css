@@ -168,8 +168,6 @@ a {
 	.chat-container {
 		height: 100%;
 		margin: 0;
-		border-top-left-radius: 0px;
-		border-top-right-radius: 0px;
 	}
 
 	.chat-main {
@@ -179,6 +177,7 @@ a {
 	.chat-messages {
 		margin-top: 100px;
 		height: 100%;
+		margin-bottom: 50px;
 	}
 
 	.chat-sidebar {
@@ -190,6 +189,8 @@ a {
 		top: 0;
 		width: 100%;
 		z-index: 1;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
 	}
 
 	.chat-form-container {
